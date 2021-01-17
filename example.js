@@ -6,12 +6,12 @@ const test = require("tape");
 const convert = require("./index");
 
 const abi = require("./node_modules/openzeppelin-solidity/build/contracts/AllowanceCrowdsale.json")
-	.abi;
+  .abi;
 const output = JSON.stringify(
-	convert(abi, {
-		as: "array",
-		for: "inputs",
-		type: "constructor",
-	})
+  convert(abi, {
+    as: "array",
+    for: "inputs",
+    type: "constructor",
+  })
 );
 console.log(output);

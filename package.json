@@ -1,70 +1,38 @@
 {
-	"_from": "abi2schema",
-	"_id": "abi2schema@0.1.1",
-	"_inBundle": false,
-	"_integrity": "sha512-96dg3tkF0b97/ahE8gO+oxKg/jV3gj1oLjBHvmA4xoAUL2VSDiYHVTWQoT6c+RzhhSwt1ptAuhoIrbJrmifh0w==",
-	"_location": "/abi2schema",
-	"_phantomChildren": {},
-	"_requested": {
-		"type": "tag",
-		"registry": true,
-		"raw": "abi2schema",
-		"name": "abi2schema",
-		"escapedName": "abi2schema",
-		"rawSpec": "",
-		"saveSpec": null,
-		"fetchSpec": "latest"
-	},
-	"_requiredBy": [
-		"#USER",
-		"/"
-	],
-	"_resolved": "https://registry.npmjs.org/abi2schema/-/abi2schema-0.1.1.tgz",
-	"_shasum": "e2ebd5fb9770b4372671bcaf1e58214714027a03",
-	"_spec": "abi2schema",
-	"_where": "/Users/sbacha/json-abi",
-	"author": {
-		"name": "Matthew J. Martin",
-		"email": "matthew.mar10@gmail.com"
-	},
-	"bugs": {
-		"url": "https://github.com/blossomfinance/abi2schema/issues"
-	},
-	"bundleDependencies": false,
-	"dependencies": {
-		"merge": "^1.2.1"
-	},
-	"deprecated": false,
-	"description": "Convert solidity ABI definition to a JSON schema.",
-	"devDependencies": {
-		"openzeppelin-solidity": "^2.1.1",
-		"release-it": "^9.8.0",
-		"tape": "^4.9.2"
-	},
-	"homepage": "https://github.com/blossomfinance/abi2schema#readme",
-	"keywords": [
-		"solidity",
-		"ethereum",
-		"JSON",
-		"schema",
-		"JSON",
-		"validation",
-		"validate",
-		"truffle",
-		"ABI",
-		"blockchain",
-		"cryptocurrency"
-	],
-	"license": "MIT",
-	"main": "index.js",
-	"name": "abi2schema",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/blossomfinance/abi2schema.git"
-	},
-	"scripts": {
-		"release": "release-it",
-		"test": "./node_modules/tape/bin/tape test.js | node_modules/.bin/tap-spec"
-	},
-	"version": "0.1.1"
+  "name": "abi2schema",
+  "version": "0.2.0",
+  "description": "solidity abit to json schema",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "npx eslint . --fix",
+    "test": "./node_modules/tape/bin/tape test.js | node_modules/.bin/tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sambacha/abi2schema.git"
+  },
+  "keywords": [
+    "solidity",
+    "abi",
+    "json",
+    "schema",
+    "ethereum",
+    "erc20"
+  ],
+  "author": "see contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sambacha/abi2schema/issues"
+  },
+  "homepage": "https://github.com/sambacha/abi2schema#readme",
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "tape": "^5.1.1"
+  },
+  "dependencies": {
+    "merge": "^2.1.0"
+  }
 }
